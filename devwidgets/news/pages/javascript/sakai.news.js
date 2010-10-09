@@ -63,7 +63,7 @@ sakai.news = function(){
         $(".have_right_to_show").show();
       }
     };
-    
+/*    
     var showProcess = function(show){
         if(show){
             $(createnewsAddSaveNew).hide();
@@ -85,7 +85,7 @@ sakai.news = function(){
             $(createnewsAddSuccess).hide();
         }
     };
-    
+*/    
     var removeAllMessagesOutDOM = function() {
         $("#news_message").remove();
     };
@@ -266,11 +266,7 @@ sakai.news = function(){
                 {
                   showProcess(false);
                   showSuccess(true);
-
-//                  loadnewsall();
-
                   window.location.reload();
-
                 }
             },
             error: function(data){
@@ -295,14 +291,13 @@ sakai.news = function(){
               if(data.success === true)
                 {
                   alert("ok");
-//                  loadnewsall();
-
+                  loadnewsall();
                   // alert("ok");
-                  // window.location.reload();                  
+//                   window.location.reload();                  
 //                  loadNewsList();
                 }
             },
-            error: function(xhr, textStatus, thrownError) {
+            error: function() {
                 alert("Cann't delete the news!");
             }
         });
@@ -426,7 +421,7 @@ sakai.news = function(){
         var title = $(this).parent().siblings("#news_title_td").children()[0].text;
         var id = getIDByTitle(title);
         getEditNews(id);
-        getEditNews(id);
+//        getEditNews(id);
         // setTimeout("getEditNews('"+id+"')",3000);
         
         $(createnewsAddSaveEdit).live("click", function(ev){
@@ -435,6 +430,7 @@ sakai.news = function(){
             var pictureURI = "";
             showProcess(true, "edit");
             saveEditNews(id,Title,Content,pictureURI);
+//            loadnewsall();
             showProcess(false, "edit");
             showSuccess(false, "edit");
         });
@@ -524,6 +520,7 @@ sakai.news = function(){
     //////////////////////////////////////////////
     // Fluid Pager and News List Initialization //
     //////////////////////////////////////////////
+    /*
     var initPager = function (userTable) {
         var options = {
             dataModel: userTable,
@@ -548,7 +545,7 @@ sakai.news = function(){
         
         fluid.pager("#news_pager", options);
     };
-    
+    */
     // Initialization
     var init = function(){
         // Check if we are logged in or out.
