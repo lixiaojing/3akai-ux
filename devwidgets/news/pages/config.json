@@ -1,0 +1,9 @@
+{
+    "description":"News",
+    "name":"News",
+    "id":"news",
+    "i18n": {
+        "default": "/devwidgets/news/pages/bundles/default.json",
+    },
+    "url":"/devwidgets/news/pages/sakai.news.html",
+}

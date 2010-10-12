@@ -1,0 +1,15 @@
+{
+"name": "Createnews",
+"description": "Createnews widget\r\n",
+"WIDGET_TITLE": "创建新闻",
+"NOW_YOU_ARE_CREATING_A_SIMPLE_NEW": "现在开始创建新闻",
+"NOW_YOU_ARE_EDITTING_A_SIMPLE_NEW": "现在开始编辑新闻",
+"CREATE_NEWS": "创建新闻",
+"CLOSE_DIALOG": "关闭",
+"PROCESSING": "正在处理",
+"SUCCESS": "保存成功!",
+"CREATE_NEWS_ADD_SAVE": "保存",
+"CREATE_NEWS_ADD_CANCEL": "取消",
+"NEWS_TITLE": "标题",
+"NEWS_CONTENT": "内容",
+}
